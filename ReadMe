@@ -1,0 +1,26 @@
+Accuracy:  0.8868657441126487
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.94      0.93      0.94      7303
+           1       0.50      0.53      0.52       935
+
+    accuracy                           0.89      8238
+   macro avg       0.72      0.73      0.73      8238
+weighted avg       0.89      0.89      0.89      8238
+
+
+Process finished with exit code 0
+
+1) SMOTE: Discrepency in accuracy between yes subscriptions (1) and no subscriptions (0)
+Therefore applying SMOTE to inflate the level of yes subscriptions so as to give an accurate reading of yes predictions
+by way having more features related to yes to process in the decision tree, this increase the dynamic part of the program
+in dynamically putting the features related to yes at the apporpriate hierachical positiosn based on either Gini score or entropy score
+
+right so its not just about feature position its about more yes subsciption features meaning a higher purity level if using Gini as there
+are more features to help discern a threshold of what constitutes yes and constitutes no in respect to the signifcance of a feature on outcome
+and this in turn influences the position of the feature in the hierarchy on the tree
+
+
+
+
